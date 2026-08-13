@@ -94,6 +94,94 @@ git remote add origin URL_DO_REPOSITORIO
 
 Esse passo é necessário porque o Git controla apenas as alterações realizadas no computador. Ao conectar o projeto ao GitHub, torna-se possível enviar, baixar e sincronizar as alterações entre o repositório local e o repositório remoto.
 
+## Passo 10: Registar o autor do commit: 
+
+```bash
+git config --global user.name "Seu nome"
+
+git config --global user.email "seu_email"
+```
+
+## Passo 11: Enviar o Projeto para o Github:
+
+Adicione os arquivos ao Git
+
+```bash
+git add .
+```
+
+Crie um commit:
+
+```bash
+git commit -m "Descrição da alteração"
+```
+
+Verifique a branch atual:
+
+```bash
+git branch
+```
+
+Exemplo:
+
+```text
+* main
+```
+
+ou
+
+```text
+* master
+```
+
+O asterisco (`*`) indica a branch atual.
+
+---
+
+### O que são branches?
+
+As *branches* são versões paralelas do projeto.
+
+A branch principal geralmente se chama `main` ou `master` e representa a linha principal de desenvolvimento.
+
+Na maioria dos projetos individuais, é comum trabalhar apenas com uma única branch.
+
+---
+
+Envie o projeto para o GitHub (primeiro envio)
+
+```bash
+git push -u origin main
+```
+
+ou
+
+```bash
+git push -u origin master
+```
+
+**Importante:** o nome da branch (`main` ou `master`) depende da branch criada no projeto.
+
+O parâmetro `-u` cria uma associação entre a branch local e a branch remota no GitHub.
+
+---
+
+Envie novas alterações
+
+Após o primeiro envio, basta executar:
+
+```bash
+git add .
+
+git commit -m "Descrição da alteração"
+
+git push
+```
+
+O parâmetro `-u` é necessário apenas no primeiro envio do projeto.
+
+Bons estudos :)
+
 
 
 
