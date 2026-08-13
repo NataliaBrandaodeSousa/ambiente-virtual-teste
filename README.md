@@ -38,17 +38,38 @@ Para instalar todas as dependências novamente, basta executar:
 pip install -r requirements.txt
 ```
 
-## Passo 6: Criar pastas para organização do Projeto
-Dentro da pasta: Projeto, digite no terminal: mkdir src (para criar a pasta src)
-Na pasta src deve ser criado o arquivo `__init__.py`
+## Passo 6: Criar pastas para organização do projeto.
+
+Dentro da pasta `Projeto`, digite no terminal:
+
+```bash
+mkdir src
+```
+
+(Para criar a pasta `src`.)
+
+Na pasta `src`, deve ser criado o arquivo `__init__.py`.
+
 O arquivo `__init__.py` indica ao Python que a pasta `src` deve ser tratada como um pacote.
+
 Isso facilita a organização do código e permite importar funções e módulos de forma mais simples.
-Ainda dentro da pasta src deve ser criado todos os arquivos que guardam funções que serão usadas no decorrer do Projeto
-Para sair da pasta src digite: cd ..
-Ao sair da pasta `src`, crie o arquivo: `main.py`
-É nesse arquivo que vai ser executado o programa principal
-Ainda dentro da pasta projeto crie o arquivo: `.gitignore`
+
+Ainda dentro da pasta `src`, devem ser criados todos os arquivos que guardam funções que serão usadas no decorrer do projeto.
+
+Para sair da pasta `src`, digite:
+
+```bash
+cd ..
+```
+
+Ao sair da pasta `src`, crie o arquivo `main.py`.
+
+É nesse arquivo que será executado o programa principal.
+
+Ainda dentro da pasta `Projeto`, crie o arquivo `.gitignore`.
+
 O arquivo `.gitignore` informa ao Git quais arquivos e pastas **não devem ser enviados para o GitHub**.
+
 Isso é importante porque alguns arquivos são temporários, são gerados automaticamente ou ocupam muito espaço e não precisam fazer parte do repositório.
 
 Exemplo de um `.gitignore` para projetos em Python:
